@@ -53,6 +53,7 @@ The environment includes a **real-time graphical user interface** (GUI) to visua
 1. Install dependencies:
    ```bash
    pip install gym matplotlib numpy
+   ```
 
 
 
