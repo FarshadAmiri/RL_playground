@@ -1,4 +1,4 @@
-# Collect & Avoid Game (Reinforcement Learning Environment)
+# Collect & Avoid Game (RL - DQN)
 
 ## Overview
 
