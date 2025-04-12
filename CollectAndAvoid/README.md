@@ -50,10 +50,11 @@ The environment includes a **real-time graphical user interface** (GUI) to visua
 
 ## Usage
 
-1. Install dependencies:
+1. Have torch installed then; Install other dependencies:
    ```bash
    pip install gym matplotlib numpy
    ```
+
 
 
 
