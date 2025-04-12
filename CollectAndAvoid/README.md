@@ -9,7 +9,7 @@ The **Collect & Avoid** game is a grid-based reinforcement learning environment 
 This environment is a subclass of `gym.Env` and follows the OpenAI Gym API. The grid consists of:
 - **Agent:** A blue circle that can move one step in any of four directions.
 - **Rewards:** Green circles placed randomly on the grid. The agent collects these rewards by moving to their location.
-- **Enemies:** Red circles that chase the agent. The game ends when an enemy collides with the agent.
+- **Enemies:** Red circles that chase the agent (50% chance of random movement). The game ends when an enemy collides with the agent.
 
 The agent interacts with the environment by taking actions, which are determined by a reinforcement learning algorithm.
 
