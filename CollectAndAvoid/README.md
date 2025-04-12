@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Collect & Avoid** game is a grid-based reinforcement learning environment where the agent must collect rewards while avoiding enemies. The agent can move in a 15x15 grid and must avoid enemies that chase it. The game ends if the agent collides with an enemy. The goal of the agent is to collect as many rewards as possible while staying alive.
+The **Collect & Avoid** game is a grid-based reinforcement learning environment where the agent must collect rewards while avoiding enemies. The agent can move in a n x n grid (15 x 15 as default) and must avoid enemies that chase it. The game ends if the agent collides with an enemy. The goal of the agent is to collect as many rewards as possible while staying alive.
 
 ## Environment
 
@@ -37,6 +37,16 @@ The action space is **discrete** with 5 possible actions:
 - `2`: Move Down
 - `3`: Move Left
 - `4`: Move Right
+
+## UI (User Interface)
+
+The environment includes a **real-time graphical user interface** (GUI) to visualize the agent's actions and the game's state:
+
+- **Grid:** The agent, rewards, and enemies are visualized on a 15x15 grid. 
+- **Agent (Blue Circle):** The agent is represented as a blue circle that moves one step at a time based on the chosen action.
+- **Rewards (Green Circles):** Rewards are placed randomly on the grid as green circles. The agent collects them when it moves to the corresponding cell.
+- **Enemies (Red Circles):** Enemies are red circles that chase the agent. The game ends when an enemy collides with the agent.
+- **Text Information:** The top of the grid shows the current episode, step, and the current reward collected by the agent.
 
 ## Usage
 
