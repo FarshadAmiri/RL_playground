@@ -81,7 +81,7 @@ The environment includes a **real-time graphical user interface** (GUI) to visua
 
 1. Have torch installed then; Install other dependencies:
    ```bash
-   pip install gym matplotlib numpy
+   pip install gym matplotlib numpy pickle
    ```
 
 
