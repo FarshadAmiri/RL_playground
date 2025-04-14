@@ -38,6 +38,37 @@ The action space is **discrete** with 5 possible actions:
 - `3`: Move Left
 - `4`: Move Right
 
+## 🏆 Reward Function
+
+The reward function encourages the agent to collect rewards efficiently and avoid enemies by assigning dense and informative feedback at each step.
+
+### 🎯 Positive Rewards
+
+- **+1.0** – Collected a reward (agent lands on a reward cell).
+- **+0.3** – Agent is **1 block** away (Manhattan distance) from a reward.
+- **+0.2** – Agent is **2 blocks** away from a reward.
+- **+0.1** – Agent is **3 blocks** away from a reward.
+
+> Rewards from proximity to multiple rewards are **accumulative**.
+
+---
+
+### ☠️ Enemy Penalties
+
+- **−0.1** – For each enemy within a **4-block radius** of the agent.
+
+---
+
+### 📏 Relative Distance Rewards
+
+- **+0.05** – Agent increased its **average distance** from all enemies (compared to the previous step).
+- **−0.05** – Agent decreased its **average distance** from enemies.
+
+---
+
+This reward structure is designed to provide meaningful feedback to the agent at each step, even when it hasn’t yet collected a reward or encountered an enemy, helping guide more efficient learning.
+
+
 ## UI (User Interface)
 
 The environment includes a **real-time graphical user interface** (GUI) to visualize the agent's actions and the game's state:
