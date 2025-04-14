@@ -42,7 +42,7 @@ The action space is **discrete** with 5 possible actions:
 
 The reward function encourages the agent to collect rewards efficiently and avoid enemies by assigning dense and informative feedback at each step.
 
-### 🎯 Positive Rewards
+### 🎯 Collecting Rewards
 
 - **+1.0** – Collected a reward (agent lands on a reward cell).
 - **+0.3** – Agent is **1 block** away (Manhattan distance) from a reward.
@@ -51,14 +51,14 @@ The reward function encourages the agent to collect rewards efficiently and avoi
 
 Rewards from proximity to multiple rewards are **accumulative**.
 
-### ☠️ Enemy Penalties
+### ☠️ Enemy Proximity Penalties
 
 - **−0.4** – For each enemy within a **1-block radius** of the agent.
 - **−0.3** – For each enemy within a **2-block radius** of the agent.
 - **−0.2** – For each enemy within a **3-block radius** of the agent.
 - **−0.1** – For each enemy within a **4-block radius** of the agent.
 
-### 📏 Relative Distance Rewards
+### 📏 Enemy Relative Distance Rewards
 
 - **+0.05** – Agent increased its **average distance** from all enemies (compared to the previous step).
 - **−0.05** – Agent decreased its **average distance** from enemies.
