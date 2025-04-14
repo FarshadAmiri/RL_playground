@@ -49,22 +49,16 @@ The reward function encourages the agent to collect rewards efficiently and avoi
 - **+0.2** – Agent is **2 blocks** away from a reward.
 - **+0.1** – Agent is **3 blocks** away from a reward.
 
-> Rewards from proximity to multiple rewards are **accumulative**.
-
----
+Rewards from proximity to multiple rewards are **accumulative**.
 
 ### ☠️ Enemy Penalties
 
 - **−0.1** – For each enemy within a **4-block radius** of the agent.
 
----
-
 ### 📏 Relative Distance Rewards
 
 - **+0.05** – Agent increased its **average distance** from all enemies (compared to the previous step).
 - **−0.05** – Agent decreased its **average distance** from enemies.
-
----
 
 This reward structure is designed to provide meaningful feedback to the agent at each step, even when it hasn’t yet collected a reward or encountered an enemy, helping guide more efficient learning.
 
