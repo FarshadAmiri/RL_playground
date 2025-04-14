@@ -53,6 +53,9 @@ Rewards from proximity to multiple rewards are **accumulative**.
 
 ### ☠️ Enemy Penalties
 
+- **−0.4** – For each enemy within a **1-block radius** of the agent.
+- **−0.3** – For each enemy within a **2-block radius** of the agent.
+- **−0.2** – For each enemy within a **3-block radius** of the agent.
 - **−0.1** – For each enemy within a **4-block radius** of the agent.
 
 ### 📏 Relative Distance Rewards
